@@ -1,0 +1,11 @@
+"2024-06-19 10:05:53,994 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODg1ODE1NCwiaWF0IjoxNzE4NzcxNzU0LCJpc3MiOiIxIiwic3ViIjoiMSJ9.Uh9hDxfOhJvfMTT3A3aY1cavJU5guMnfGx23T3LhQ40",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcyNjU0Nzc1NCwiaWF0IjoxNzE4NzcxNzU0LCJpc3MiOiIxIiwic3ViIjoiMSJ9.xi--qF-b7-nlFbbBmmXLioa4h-zsi6gIYuPrtaGCq0A"
+    }
+}"
+Tenant Admin Token :  {'tenant_admin_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODg1ODE1NCwiaWF0IjoxNzE4NzcxNzU0LCJpc3MiOiIxIiwic3ViIjoiMSJ9.Uh9hDxfOhJvfMTT3A3aY1cavJU5guMnfGx23T3LhQ40'}

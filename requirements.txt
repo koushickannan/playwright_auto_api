@@ -1,0 +1,11 @@
+pytest-playwright
+pytest~=7.4.4
+playwright~=1.36.0
+pydantic~=2.6.1
+assertpy~=1.1
+Faker~=19.6.1
+pytest-dependency
+flake8
+allure-pytest
+products~=1.2.0
+requests~=2.31.0

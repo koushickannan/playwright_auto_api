@@ -1,0 +1,729 @@
+"2024-06-19 16:43:54,078 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODg4MjAzMywiaWF0IjoxNzE4Nzk1NjMzLCJpc3MiOiIxIiwic3ViIjoiMSJ9.qxouZszwp7lS9NvchyXtoyG6p1O_gW6vO5o--vLZwh0",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcyNjU3MTYzMywiaWF0IjoxNzE4Nzk1NjMzLCJpc3MiOiIxIiwic3ViIjoiMSJ9.2jwuXclzC9myI29sJCraojgwiZ5aHn0m5pXQsoMXRpg"
+    }
+}"
+Tenant Admin Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODg4MjAzMywiaWF0IjoxNzE4Nzk1NjMzLCJpc3MiOiIxIiwic3ViIjoiMSJ9.qxouZszwp7lS9NvchyXtoyG6p1O_gW6vO5o--vLZwh0
+"2024-06-19 16:44:17,064 — products.reqres.clients.user_client — INFO — get_user:19 — 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "users": [
+            {
+                "id": 96716,
+                "firstName": "A Cerica",
+                "email": "AOdibe@yopmail.com",
+                "lastName": "Odibe",
+                "orgId": 1765,
+                "orgName": "Health Dept",
+                "hrisId": "dd89b694991a0172235f4d5f66011f9b",
+                "lastModifiedOn": 1662110387,
+                "statusId": 2,
+                "unit": {
+                    "id": 91307,
+                    "unitId": 4245,
+                    "unitCode": "LOC-67111",
+                    "unitName": "St Vincent Medical Center",
+                    "jobTitle": "Staff Coordinator",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 15515,
+                "firstName": "A NONREG",
+                "middleName": "B",
+                "email": "abchk9011@yopmail.com",
+                "lastName": "C",
+                "orgId": 1474,
+                "orgName": "Hierarchy",
+                "hrisId": "HK9011",
+                "lastModifiedOn": 1660654956,
+                "statusId": 2,
+                "unit": {
+                    "id": 10310,
+                    "unitId": 3250,
+                    "unitName": "RQI",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 15515,
+                "firstName": "A NONREG",
+                "middleName": "B",
+                "email": "abchk9011@yopmail.com",
+                "lastName": "C",
+                "lastModifiedOn": 1660654956,
+                "statusId": 2,
+                "unit": {
+                    "id": 45668,
+                    "jobCode": "ENT",
+                    "jobTitle": "ENT CODE",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 108972,
+                "firstName": "A.",
+                "email": "SiachosMD@yopmail.com",
+                "lastName": "Siachos",
+                "orgId": 1765,
+                "orgName": "Health Dept",
+                "hrisId": "06b12d96dba3010ec53d906af4016a36",
+                "lastModifiedOn": 1637815975,
+                "statusId": 3,
+                "unit": {
+                    "id": 103598,
+                    "unitId": 4628,
+                    "unitCode": "LOC-17000",
+                    "unitName": "St Francis - Downtown",
+                    "jobTitle": "External Learner",
+                    "status": "INACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "INACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 69814,
+                "firstName": "A'Ja",
+                "email": "AChambers1@yopmail.com",
+                "lastName": "Chambers",
+                "orgId": 1765,
+                "orgName": "Health Dept",
+                "hrisId": "a74bb8a1b1e7011e3fa7dc64df137973",
+                "lastModifiedOn": 1660648027,
+                "statusId": 2,
+                "unit": {
+                    "id": 64405,
+                    "unitId": 4177,
+                    "unitCode": "LOC-61019",
+                    "unitName": "St Elizabeth Youngstown Hospital",
+                    "jobTitle": "Health Care Assoc",
+                    "status": "INACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 1176876,
+                "firstName": "A'LISA",
+                "middleName": "D",
+                "email": "A'LISA.STOVALL@ALEGENT.ORG",
+                "lastName": "STOVALL",
+                "orgId": 5099,
+                "orgName": "TestOrgForSyncUsers",
+                "hrisId": "CHI130444",
+                "lastModifiedOn": 1669808063,
+                "statusId": 3,
+                "unit": {
+                    "id": 1169953,
+                    "unitId": 12205,
+                    "unitName": "Organization",
+                    "jobTitle": "RN-PATIENT CARE BEDSIDE NON-EXEMPT CHARGE",
+                    "status": "INACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "INACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 1208328,
+                "firstName": "Aa",
+                "email": "aa.mb@yopmail.com",
+                "lastName": "MB",
+                "orgId": 5641,
+                "orgName": "Matt Black",
+                "hrisId": "0101A",
+                "lastModifiedOn": 1673420598,
+                "statusId": 2,
+                "unit": {
+                    "id": 1199554,
+                    "unitId": 14126,
+                    "unitName": "Organization",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 1202636,
+                "firstName": "aaa",
+                "email": "abb@yopmail.com",
+                "lastName": "vvv",
+                "orgId": 5258,
+                "orgName": "OrgAuto_tJYn",
+                "hrisId": "56989",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1669873355,
+                "statusId": 2,
+                "unit": {
+                    "id": 1195723,
+                    "unitId": 12778,
+                    "unitName": "Organization",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 199590,
+                "userName": "8AP-0519",
+                "firstName": "AAAA",
+                "email": "AApooja56@yopmail.com",
+                "lastName": "poojacdefghi",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1716528186,
+                "statusId": 2,
+                "userRefId": "8AP-0519",
+                "unit": {
+                    "id": 332430,
+                    "jobCode": "testDoctor",
+                    "jobTitle": "Doctor",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {
+                        "id": 2,
+                        "name": "Essentials Provider",
+                        "code": "ESSENTIAL_PROVIDER"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1764547199
+                },
+                "lastLoggedDate": 1677584191,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": false
+            },
+            {
+                "id": 783889,
+                "userName": "8AU-0526",
+                "firstName": "AAAAAAA",
+                "middleName": "md",
+                "email": "AU@yopmail.com",
+                "lastName": "Utttt",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1716792740,
+                "statusId": 2,
+                "userRefId": "8AU-0526",
+                "unit": {
+                    "id": 793328,
+                    "jobCode": "backing",
+                    "jobTitle": "e-enable",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {
+                        "id": 7,
+                        "name": "Instructor Mentor",
+                        "code": "INSTRUCTOR_MENTOR"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1704067199
+                },
+                "lastLoggedDate": 1716792740,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": true
+            },
+            {
+                "id": 783959,
+                "firstName": "aaad",
+                "email": "sdas@mailaintor.com",
+                "lastName": "aasas",
+                "orgId": 5105,
+                "orgName": "cps threshold",
+                "hrisId": "89099",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1662984631,
+                "statusId": 2,
+                "unit": {
+                    "id": 778313,
+                    "unitId": 12214,
+                    "unitName": "Organization",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "CA",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 205224,
+                "firstName": "aaAletha",
+                "email": "laerdalmiddleware@yopmail.com",
+                "lastName": "bbStehr",
+                "orgId": 1438,
+                "orgName": "Admin Migration Org 02",
+                "hrisId": "hrisRapid",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1661324926,
+                "statusId": 2,
+                "unit": {
+                    "id": 199917,
+                    "unitId": 3147,
+                    "unitName": "Organization",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 205226,
+                "firstName": "aaCarter",
+                "email": "laerdalcapacitor@yopmail.com",
+                "lastName": "bbBernier",
+                "orgId": 1438,
+                "orgName": "Admin Migration Org 02",
+                "hrisId": "hrisAnalyst",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1661325182,
+                "statusId": 2,
+                "unit": {
+                    "id": 199918,
+                    "unitId": 3147,
+                    "unitName": "Organization",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 205202,
+                "firstName": "aaCasper",
+                "middleName": "sIB",
+                "email": "laerdalup@mailinator.com",
+                "lastName": "bbbKris",
+                "orgId": 1438,
+                "orgName": "Admin Migration Org 02",
+                "hrisId": "hrisAfrican",
+                "lastModifiedOn": 1661318728,
+                "statusId": 2,
+                "unit": {
+                    "id": 199900,
+                    "unitId": 3147,
+                    "unitName": "Organization",
+                    "jobTitle": "Doctor",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 204722,
+                "firstName": "AAdrienne",
+                "middleName": "s",
+                "email": "laerdalCoordinator@yopmail.com",
+                "lastName": "ASchowalter",
+                "orgId": 1438,
+                "orgName": "Admin Migration Org 02",
+                "hrisId": "hrispink",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1661404175,
+                "statusId": 2,
+                "unit": {
+                    "id": 199452,
+                    "unitId": 3147,
+                    "unitName": "Organization",
+                    "jobTitle": "Doctor",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 204942,
+                "firstName": "aaErna",
+                "middleName": "sTurkey",
+                "email": "laerdalport@yopmail.com",
+                "lastName": "bbBednar",
+                "orgId": 1438,
+                "orgName": "Admin Migration Org 02",
+                "hrisId": "hrisAssociate",
+                "lastModifiedOn": 1661404175,
+                "statusId": 2,
+                "unit": {
+                    "id": 199654,
+                    "unitId": 3147,
+                    "unitName": "Organization",
+                    "jobTitle": "Doctor",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 1220570,
+                "userName": "8AA-0598",
+                "firstName": "aaetest",
+                "email": "aaetest@rqimail.laerdalblr.in",
+                "lastName": "aaetestsq",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1715923325,
+                "statusId": 2,
+                "userRefId": "8AA-0598",
+                "unit": {},
+                "userRank": {
+                    "rank": {
+                        "id": 1,
+                        "name": "Learner",
+                        "code": "LEARNER"
+                    },
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": true
+            },
+            {
+                "id": 1220569,
+                "userName": "8AA-0598",
+                "firstName": "aaetest",
+                "middleName": "",
+                "email": "aaetest@rqimail.laerdalblr.in",
+                "lastName": "aaetest",
+                "orgId": 4520,
+                "orgName": "RQI1Stop-Parent",
+                "hrisId": "2100008541",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1681278088,
+                "statusId": 2,
+                "userRefId": "8AA-0598",
+                "unit": {
+                    "id": 1206816,
+                    "unitId": 11521,
+                    "unitName": "MCI",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {
+                        "id": 1,
+                        "name": "Learner",
+                        "code": "LEARNER"
+                    },
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 1040729,
+                "userName": "8AV-0014",
+                "firstName": "aah",
+                "email": "aah99888776575@mailinator.com",
+                "lastName": "Vettel",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1715928648,
+                "statusId": 2,
+                "userRefId": "8AV-0014",
+                "unit": {},
+                "userRank": {
+                    "rank": {
+                        "id": 2,
+                        "name": "Essentials Provider",
+                        "code": "ESSENTIAL_PROVIDER"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1730419199,
+                    "subscriptionId": "3069044"
+                },
+                "lastLoggedDate": 1683516670,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": true
+            },
+            {
+                "id": 1031574,
+                "userName": "8AD-0025",
+                "firstName": "aah",
+                "email": "aah99888776581@yopmail.com",
+                "lastName": "Dhoni",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1715953039,
+                "statusId": 2,
+                "userRefId": "8AD-0025",
+                "unit": {},
+                "userRank": {
+                    "rank": {
+                        "id": 7,
+                        "name": "Instructor Mentor",
+                        "code": "INSTRUCTOR_MENTOR"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1748649599,
+                    "subscriptionId": "3142752"
+                },
+                "lastLoggedDate": 1715953039,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": false
+            },
+            {
+                "id": 1036639,
+                "userName": "8AS-0582",
+                "firstName": "aah",
+                "email": "aah99888781431@yopmail.com",
+                "lastName": "Syren",
+                "orgId": 5140,
+                "orgName": "Advocate Aurora Health",
+                "hrisId": "998887814312",
+                "lastModifiedOn": 1708578654,
+                "statusId": 3,
+                "userRefId": "8AS-0582",
+                "unit": {
+                    "id": 1030388,
+                    "unitId": 12394,
+                    "unitName": "IND",
+                    "jobTitle": "Physician",
+                    "status": "INACTIVE"
+                },
+                "userRank": {
+                    "rank": {
+                        "id": 5,
+                        "name": "Instructor",
+                        "code": "INSTRUCTOR"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1730419199,
+                    "subscriptionId": "3127853"
+                },
+                "lastLoggedDate": 1681884532,
+                "status": "INACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 1040797,
+                "userName": "8AS-0582",
+                "firstName": "aah",
+                "email": "aah99888781431@yopmail.com",
+                "lastName": "Syren",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1683382905,
+                "statusId": 2,
+                "userRefId": "8AS-0582",
+                "unit": {
+                    "id": 1034545,
+                    "jobCode": "CM",
+                    "jobTitle": "Certified Midwife",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {
+                        "id": 5,
+                        "name": "Instructor",
+                        "code": "INSTRUCTOR"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1730419199,
+                    "subscriptionId": "3127853"
+                },
+                "lastLoggedDate": 1681894143,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": true
+            },
+            {
+                "id": 1031783,
+                "userName": "8AV-0014",
+                "firstName": "aah",
+                "email": "aah99888776575@mailinator.com",
+                "lastName": "Vettels",
+                "orgId": 5140,
+                "orgName": "Advocate Aurora Health",
+                "hrisId": "99888776575",
+                "lastModifiedOn": 1706702609,
+                "statusId": 2,
+                "userRefId": "8AV-0014",
+                "unit": {
+                    "id": 1025487,
+                    "unitId": 12393,
+                    "unitName": "ONT",
+                    "jobTitle": "EMT",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {
+                        "id": 2,
+                        "name": "Essentials Provider",
+                        "code": "ESSENTIAL_PROVIDER"
+                    },
+                    "isActive": true,
+                    "expiredAt": 1730419199,
+                    "subscriptionId": "3069044"
+                },
+                "lastLoggedDate": 1683520139,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 204614,
+                "firstName": "AAiden",
+                "middleName": "s",
+                "email": "laerdalPlastic@yopmail.com",
+                "lastName": "AGerhold",
+                "orgId": 1438,
+                "orgName": "Admin Migration Org 02",
+                "hrisId": "hrisLake",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1660805186,
+                "statusId": 2,
+                "unit": {
+                    "id": 199351,
+                    "unitId": 3147,
+                    "unitName": "Organization",
+                    "jobTitle": "Doctor",
+                    "status": "ACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            },
+            {
+                "id": 72935,
+                "firstName": "Aakash",
+                "middleName": "Yogeshbhai",
+                "email": "APatel2@yopmail.com",
+                "lastName": "Patel",
+                "orgId": 1765,
+                "orgName": "Health Dept",
+                "hrisId": "67b88f4666800179afb50d850c01df95",
+                "lastModifiedOn": 1637815811,
+                "statusId": 3,
+                "unit": {
+                    "id": 67509,
+                    "unitId": 4440,
+                    "unitCode": "LOC-63203",
+                    "unitName": "The Jewish Hospital",
+                    "jobTitle": "Physician Resident 3",
+                    "status": "INACTIVE"
+                },
+                "userRank": {
+                    "rank": {},
+                    "isActive": true
+                },
+                "status": "INACTIVE",
+                "region": "US",
+                "isRetail": false,
+                "isDistributor": false
+            }
+        ],
+        "pagination": {
+            "pageNumber": 1,
+            "pageSize": 25,
+            "totalCount": 437392,
+            "totalPages": 17496,
+            "isFirst": true,
+            "isLast": false,
+            "totalCountOnPage": 25
+        }
+    }
+}"

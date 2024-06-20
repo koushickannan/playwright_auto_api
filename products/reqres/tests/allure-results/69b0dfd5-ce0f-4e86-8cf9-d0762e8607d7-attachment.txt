@@ -1,0 +1,20 @@
+"2024-06-19 15:32:09,243 — products.reqres.clients.user_client — INFO — get_user:19 — 
+Get User Response:
+{
+    "status": 400,
+    "error": {
+        "httpMethod": "GET",
+        "urlPath": "/org-user/v1/users?nrpId=8BL-0006",
+        "timeStamp": "1718791329",
+        "errors": [
+            {
+                "errorCode": "400",
+                "message": "Authorization param is missing in header",
+                "classification": "authz-service-error"
+            }
+        ],
+        "httpStatusText": "Bad Request"
+    },
+    "data": null,
+    "warning": null
+}"

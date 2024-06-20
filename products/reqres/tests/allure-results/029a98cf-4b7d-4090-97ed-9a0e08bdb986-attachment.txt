@@ -1,0 +1,31 @@
+"2024-06-19 15:49:28,285 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODg3ODc2OCwiaWF0IjoxNzE4NzkyMzY4LCJpc3MiOiIxIiwic3ViIjoiMSJ9.RXQ2MeavMFYUCsJtP55j995xRcNPVgL-qNgUarl2bx8",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcyNjU2ODM2OCwiaWF0IjoxNzE4NzkyMzY4LCJpc3MiOiIxIiwic3ViIjoiMSJ9.9bRywmtlQJzgtR05IRct4ZLnYP8Qzuall2l5DafVg3Q"
+    }
+}"
+Tenant Admin Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODg3ODc2OCwiaWF0IjoxNzE4NzkyMzY4LCJpc3MiOiIxIiwic3ViIjoiMSJ9.RXQ2MeavMFYUCsJtP55j995xRcNPVgL-qNgUarl2bx8
+"2024-06-19 15:49:29,098 — products.reqres.clients.user_client — INFO — get_user:19 — 
+Get User Response:
+{
+    "status": 400,
+    "error": {
+        "httpMethod": "GET",
+        "urlPath": "/org-user/v1/users?nrpId=8BL-0006",
+        "timeStamp": "1718792368",
+        "errors": [
+            {
+                "errorCode": "400",
+                "message": "Authorization param is missing in header",
+                "classification": "authz-service-error"
+            }
+        ],
+        "httpStatusText": "Bad Request"
+    },
+    "data": null,
+    "warning": null
+}"

@@ -1,0 +1,10 @@
+"2024-06-17 19:02:26,118 — products.reqres.clients.token_client — INFO — create_tenant_admin_token:19 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODcxNzU0NSwiaWF0IjoxNzE4NjMxMTQ1LCJpc3MiOiIxIiwic3ViIjoiMSJ9.68ZCByAqQUrKdn0o2dWkZR94bqAbPgTHKoFFut5cCKk",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcyNjQwNzE0NSwiaWF0IjoxNzE4NjMxMTQ1LCJpc3MiOiIxIiwic3ViIjoiMSJ9.OtYR0quWDBzjjpEo-22LHTHcXTAxdFlhc0uNvTd9YEU"
+    }
+}"
