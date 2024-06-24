@@ -36,8 +36,19 @@ class UserClient(BaseClient):
         )
         return status_code, response
 
-    def create_user(self, endpoint_key: str, payload: dict, auth_token: str = None) -> (int, dict):
-        endpoint = PostEndpoint(endpoint=endpoint_key, payload_provider=payload)
-        status_code, response = self.request_processor(endpoint, auth_token=auth_token)
+    def create_user(
+            self,
+            endpoint_key: str,
+            payload: dict,
+            auth_token: str = None
+    ) -> (int, dict):
+        endpoint = PostEndpoint(
+            endpoint=endpoint_key,
+            payload_provider=payload
+        )
+        status_code, response = self.request_processor(
+            endpoint,
+            auth_token=auth_token
+        )
         self.logger.info("\nGet User Response:\n{}".format(json.dumps(response, indent=4)))
         return status_code, response

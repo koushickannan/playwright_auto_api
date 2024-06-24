@@ -37,28 +37,32 @@ def token_storage():
 #     yield r_context
 #     r_context.dispose()
 #
-# @pytest.fixture(scope="session")
-# def request_context(playwright: Playwright) -> Callable[[str], Generator[APIRequestContext, None, None]]:
-#     """
-#         Fixture to create request context with a given base URL.
-#         """
-#
-#     def create_context(base_url: str) -> Generator[APIRequestContext, None, None]:
-#         r_context = playwright.request.new_context(base_url=base_url)
-#         yield r_context
-#         r_context.dispose()
-#
-#     return create_context
+
 
 @pytest.fixture(scope="session")
-def request_context(playwright: Playwright) -> Generator[APIRequestContext, None, None]:
+def request_context(playwright: Playwright) -> Callable[[str], Generator[APIRequestContext, None, None]]:
     """
-    Fixture to create request context with a given base URL.
-    """
-    base_url = get_config("BaseConfig", "base_url")
-    r_context = playwright.request.new_context(base_url=base_url)
-    yield r_context
-    r_context.dispose()
+        Fixture to create request context with a given base URL.
+        """
+
+    def create_context(base_url: str) -> Generator[APIRequestContext, None, None]:
+        r_context = playwright.request.new_context(base_url=base_url)
+        yield r_context
+        r_context.dispose()
+
+    return create_context
+
+
+# ##Working request_context --> commenting to check dynamic base_url
+# @pytest.fixture(scope="session")
+# def request_context(playwright: Playwright) -> Generator[APIRequestContext, None, None]:
+#     """
+#     Fixture to create request context with a given base URL.
+#     """
+#     base_url = get_config("BaseConfig", "base_url")
+#     r_context = playwright.request.new_context(base_url=base_url)
+#     yield r_context
+#     r_context.dispose()
 
 
 #
@@ -74,9 +78,14 @@ def request_context(playwright: Playwright) -> Generator[APIRequestContext, None
 #
 #     return create_client
 @pytest.fixture(scope="session")
-def token_client(request_context: APIRequestContext) -> Callable[[str], TokenClient]:
+#def token_client(request_context: APIRequestContext) -> Callable[[str], TokenClient]:
+def token_client(request_context) -> Callable[[str], TokenClient]:
     def create_client(base_url: str) -> TokenClient:
-        context = request_context  # Use the already provided request context
+        # context = request_context  # Use the already provided request context
+        # client = TokenClient(request_context=context)
+        # return client
+        context_generator = request_context(base_url)
+        context = next(context_generator)  # Get the APIRequestContext
         client = TokenClient(request_context=context)
         return client
 
