@@ -1,5 +1,5 @@
 # main.py
-from products.reqres.testdata.token_test_data import create_tenant_admin_token
+from apis.reqres.testdata.token_test_data import create_tenant_admin_token
 
 
 def main():

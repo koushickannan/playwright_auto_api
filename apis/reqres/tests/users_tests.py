@@ -1,0 +1,70 @@
+import pytest
+import self
+from allure import description, epic, story, step
+import requests
+
+from core.utils.config_parser import get_config
+from core.utils.logger_config import get_logger
+from apis.reqres.clients.user_client import UserClient
+from apis.reqres.endpoints.get_endpoint import GetEndpoint
+from apis.reqres.testdata.user_test_data import create_user_request_payload
+
+
+@epic("Users")
+@story("Verify user modules")
+@description("Scenarios: Users")
+class TestUserModules:
+    logger = get_logger(module_name=__name__)
+    user_id = None
+
+    @pytest.fixture(scope="class")
+    def user_client(self, request_context):
+        user_client_context = UserClient(request_context=request_context)
+        yield user_client_context
+
+    @step("Create retail user")
+    @pytest.mark.reqres
+    @pytest.mark.dependency()
+    def test_create_retail_user(self, user_client, tenant_admin_token):
+        request_payload = create_user_request_payload()
+        endpoint_key = "get_user_endpoint"  # This should match your endpoint configuration key
+        status_code, response = user_client.create_user(endpoint_key=endpoint_key, payload=request_payload,
+                                                        auth_token=tenant_admin_token)
+
+        # Assertions to verify the response
+        assert status_code == 200
+
+        # Fetch user ID from the response
+        self.__class__.user_id = response['data']['id']
+        self.logger.info("User ID from create retail user API: %s", self.__class__.user_id)
+
+    @step("Get Users by global ID")
+    @pytest.mark.reqres
+    @pytest.mark.dependency()
+    def test_get_user_by_gid(self, user_client, tenant_admin_token):
+        nrp_id = get_config("TestData", "nrp_id")
+        query_params = {"nrpId": nrp_id}
+        endpoint_key = "get_user_endpoint"  # This should match your endpoint configuration key
+        status_code, response = user_client.get_user(
+            endpoint_key=endpoint_key,
+            query_params=query_params,
+            auth_token=tenant_admin_token
+        )
+
+        # Assertions to verify the response
+        assert status_code == 200
+
+    @step("Get Users by User ID")
+    @pytest.mark.reqres
+    @pytest.mark.dependency()
+    def test_get_user_by_id(self, user_client, tenant_admin_token):
+        user_id = self.__class__.user_id
+        endpoint_key = "get_user_id_endpoint"  # This should match your endpoint configuration key
+        status_code, response = user_client.get_user(
+            endpoint_key=endpoint_key,
+            auth_token=tenant_admin_token,
+            path_params={"user_id": user_id}
+        )
+
+        # Assertions to verify the response
+        assert status_code == 200

@@ -1,0 +1,51 @@
+INFO     products.reqres.clients.user_client:user_client.py:21 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "user": {
+            "userId": 1474127,
+            "firstName": "Jill",
+            "lastName": "Garcia",
+            "emailId": "Jill.Garcia@rqimail.laerdalblr.in",
+            "createdAt": 1719197390,
+            "updatedAt": 1719197390,
+            "agreementAcceptanceDate": 1719197390,
+            "lastModifiedDate": "2024-06-24T02:49:50",
+            "userRank": {
+                "isActive": true,
+                "rank": {
+                    "id": 1,
+                    "name": "Learner",
+                    "code": "LEARNER"
+                },
+                "roleId": 11,
+                "roleName": "Learner",
+                "roleTitle": "Learner",
+                "externalRoleId": 2,
+                "isManual": false
+            },
+            "globalRank": {},
+            "linkedProfiles": [
+                {
+                    "userId": 1474127,
+                    "rankId": 1,
+                    "rankName": "Learner",
+                    "isRetail": true,
+                    "isLearner": true
+                }
+            ],
+            "isTermsAccepted": true,
+            "status": "ActivationPending",
+            "region": "US",
+            "isRetail": true,
+            "isSelfRegister": false,
+            "ceJob": {},
+            "isDistributor": false,
+            "recoveryStatus": "Do_Not_Show_Me",
+            "extLmsUserIds": [],
+            "isHealthStreamUser": false,
+            "profileActivated": false
+        }
+    }
+}

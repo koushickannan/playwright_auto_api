@@ -1,0 +1,11 @@
+"2024-06-24 11:14:31,152 — apis.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiYzA0OWRmMTMtZmQ3Yi00YjNlLWIzZTEtYmUzNWRmMzViZDIxIiwiZXhwIjo5NDk1MjA3ODcxLCJpYXQiOjE3MTkyMDc4NzEsImlzcyI6IjEiLCJzdWIiOiIxIn0.b2mVZllHZarwj2bsUSHzXId2HHcb-pZT4JVnCpZ8vOg",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiYzA0OWRmMTMtZmQ3Yi00YjNlLWIzZTEtYmUzNWRmMzViZDIxIiwiZXhwIjoxNzI2OTgzODcxLCJpYXQiOjE3MTkyMDc4NzEsImlzcyI6IjEiLCJzdWIiOiIxIn0.uJYFiKZm_Tck3Rg0C-c0NMg0ZaFl6-wtt_lrqm6wtIk"
+    }
+}"
+Guest Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiYzA0OWRmMTMtZmQ3Yi00YjNlLWIzZTEtYmUzNWRmMzViZDIxIiwiZXhwIjo5NDk1MjA3ODcxLCJpYXQiOjE3MTkyMDc4NzEsImlzcyI6IjEiLCJzdWIiOiIxIn0.b2mVZllHZarwj2bsUSHzXId2HHcb-pZT4JVnCpZ8vOg

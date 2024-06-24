@@ -9,3 +9,4 @@ class HttpMethods(Enum):
     GET = auto()
     PUT = auto()
     DELETE = auto()
+    PATCH = auto()

@@ -1,0 +1,18 @@
+"2024-06-24 10:56:41,784 — products.reqres.clients.user_client — INFO — get_user:34 — 
+Get User Response:
+{
+    "status": 400,
+    "error": {
+        "httpMethod": "GET",
+        "urlPath": "http://qa-nrp-api.laerdalblr.in/v1/users/%7Bid%7D",
+        "timeStamp": "2024-06-24T05:26:41.662458Z",
+        "errors": [
+            {
+                "errorCode": "user-organization-service_1016",
+                "message": "userId is invalid.",
+                "classification": "common.request.args"
+            }
+        ],
+        "httpStatusText": "BAD_REQUEST"
+    }
+}"

@@ -1,0 +1,17 @@
+INFO     products.reqres.clients.user_client:user_client.py:21 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "users": [],
+        "pagination": {
+            "pageNumber": 1,
+            "pageSize": 25,
+            "totalCount": 0,
+            "totalPages": 0,
+            "isFirst": true,
+            "isLast": true,
+            "totalCountOnPage": 0
+        }
+    }
+}

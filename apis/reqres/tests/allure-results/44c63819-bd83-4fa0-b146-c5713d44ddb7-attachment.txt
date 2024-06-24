@@ -1,0 +1,17 @@
+"2024-06-21 17:18:36,701 — products.reqres.clients.user_client — INFO — get_user:21 — 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "users": [],
+        "pagination": {
+            "pageNumber": 1,
+            "pageSize": 25,
+            "totalCount": 0,
+            "totalPages": 0,
+            "isFirst": true,
+            "isLast": true,
+            "totalCountOnPage": 0
+        }
+    }
+}"

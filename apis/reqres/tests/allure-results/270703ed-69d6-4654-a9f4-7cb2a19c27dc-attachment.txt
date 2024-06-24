@@ -1,0 +1,29 @@
+"2024-06-21 15:26:51,509 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMGJjZmM5MTEtNGM1MC00MWQzLWFmNmUtY2ZhNGZmNDJmZGZiIiwiZXhwIjo5NDk0OTYzODExLCJpYXQiOjE3MTg5NjM4MTEsImlzcyI6IjEiLCJzdWIiOiIxIn0.PVQyC7mzjcRo72gmg6lCmGvH7VdJIKIS6MexB3Jc9xc",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMGJjZmM5MTEtNGM1MC00MWQzLWFmNmUtY2ZhNGZmNDJmZGZiIiwiZXhwIjoxNzI2NzM5ODExLCJpYXQiOjE3MTg5NjM4MTEsImlzcyI6IjEiLCJzdWIiOiIxIn0.5h3KgkgvHyZ9Qgg1clpUetXBoKBtnqh5I0g-wBxoIkI"
+    }
+}"
+Guest Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMGJjZmM5MTEtNGM1MC00MWQzLWFmNmUtY2ZhNGZmNDJmZGZiIiwiZXhwIjo5NDk0OTYzODExLCJpYXQiOjE3MTg5NjM4MTEsImlzcyI6IjEiLCJzdWIiOiIxIn0.PVQyC7mzjcRo72gmg6lCmGvH7VdJIKIS6MexB3Jc9xc
+"2024-06-21 15:26:52,234 — products.reqres.clients.user_client — INFO — create_user:27 — 
+Get User Response:
+{
+    "status": 500,
+    "error": {
+        "httpMethod": "POST",
+        "urlPath": "http://qa-nrp-api.laerdalblr.in/v1/users",
+        "timeStamp": "2024-06-21T09:56:52.104798Z",
+        "errors": [
+            {
+                "errorCode": "user-organization-service_1001",
+                "message": "Internal error in API Service.",
+                "classification": "common.server"
+            }
+        ],
+        "httpStatusText": "INTERNAL_SERVER_ERROR"
+    }
+}"

@@ -1,0 +1,14 @@
+"2024-06-21 14:52:01,163 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMTUyMzRjNjYtZDhjNi00NDUxLWFmNzgtODdjYjlmNTQwYzdhIiwiZXhwIjo5NDk0OTYxNzIwLCJpYXQiOjE3MTg5NjE3MjAsImlzcyI6IjEiLCJzdWIiOiIxIn0.10xBo6q-cYljnbGiY_-qBptc-z27hqgh3ev5o5aGdr4",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMTUyMzRjNjYtZDhjNi00NDUxLWFmNzgtODdjYjlmNTQwYzdhIiwiZXhwIjoxNzI2NzM3NzIwLCJpYXQiOjE3MTg5NjE3MjAsImlzcyI6IjEiLCJzdWIiOiIxIn0._jiZWG0bmEKI7t30jWHmKEQm3ckZbmUr3zZUsnWNNAo"
+    }
+}"
+Guest Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMTUyMzRjNjYtZDhjNi00NDUxLWFmNzgtODdjYjlmNTQwYzdhIiwiZXhwIjo5NDk0OTYxNzIwLCJpYXQiOjE3MTg5NjE3MjAsImlzcyI6IjEiLCJzdWIiOiIxIn0.10xBo6q-cYljnbGiY_-qBptc-z27hqgh3ev5o5aGdr4
+First name :  Nathan
+Last name :  Smith
+Email :  Nathan.Smith@rqimail.laerdalblr.in

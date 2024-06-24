@@ -24,12 +24,17 @@ class BaseClient:
         http_method = endpoint.http_method()
         query_params = endpoint.query_parameters()
         auth_token = kwargs.get('auth_token')
-        path_params = endpoint.path_parameters(**kwargs) if 'user_id' in kwargs else None
+        path_params = endpoint.path_parameters()
         headers = endpoint.headers(auth_token=auth_token)
         request_body = endpoint.request_body()
 
+        # if path_params:
+        #     url = url.format(**path_params)
+
         if path_params:
-            url = url.format(**path_params)
+            for key, value in path_params.items():
+                #url = url.format(**path_params)
+                url = url.replace(f'{{{key}}}', str(value))
 
         # if query_params:
         #     url += '?'
@@ -51,6 +56,12 @@ class BaseClient:
         if http_method == HttpMethods.GET.name:
             response = self.request_context.get(url=url, headers=headers)
         elif http_method == HttpMethods.POST.name:
+            response = self.request_context.post(url=url, headers=headers, data=request_body)
+        elif http_method == HttpMethods.PATCH.name:
+            response = self.request_context.post(url=url, headers=headers, data=request_body)
+        elif http_method == HttpMethods.PUT.name:
+            response = self.request_context.post(url=url, headers=headers, data=request_body)
+        elif http_method == HttpMethods.DELETE.name:
             response = self.request_context.post(url=url, headers=headers, data=request_body)
         else:
             raise ValueError(f"Unsupported HTTP method: {http_method}")

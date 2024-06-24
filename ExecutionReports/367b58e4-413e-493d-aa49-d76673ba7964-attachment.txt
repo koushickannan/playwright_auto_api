@@ -1,8 +1,0 @@
-"2024-06-17 15:42:38,464 — products.reqres.clients.user_client — INFO — create_user:21 — 
-Create User Response:
-{
-    "name": "Hannah Goodwin",
-    "job": "Animator",
-    "id": "254",
-    "createdAt": "2024-06-17T10:12:38.262Z"
-}"

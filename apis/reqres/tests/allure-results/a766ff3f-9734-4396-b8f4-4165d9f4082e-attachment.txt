@@ -1,0 +1,55 @@
+"2024-06-20 12:00:11,545 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODk1MTQxMSwiaWF0IjoxNzE4ODY1MDExLCJpc3MiOiIxIiwic3ViIjoiMSJ9.ToAPSnowr66CerQ4-TRSNUri9kDaf5a0aWiMWEhpZA8",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcyNjY0MTAxMSwiaWF0IjoxNzE4ODY1MDExLCJpc3MiOiIxIiwic3ViIjoiMSJ9.a95sMukb7Q_dF_nUWcjVXRJ4Lx2IU1mudPpVWVhOr5s"
+    }
+}"
+Tenant Admin Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiI3MzkiLCJzdG9yZUNvZGUiOiI3MTAiLCJsYW5nQ29kZSI6ImVuIiwicm9sZSI6InRlbmFudF9hZG1pbiIsInJvbGVJZCI6NDQ1LCJleHRlcm5hbFVzZXJJZCI6IjY4ODkiLCJyZWdpb24iOiJVUyIsImV4cCI6MTcxODk1MTQxMSwiaWF0IjoxNzE4ODY1MDExLCJpc3MiOiIxIiwic3ViIjoiMSJ9.ToAPSnowr66CerQ4-TRSNUri9kDaf5a0aWiMWEhpZA8
+"2024-06-20 12:00:12,558 — products.reqres.clients.user_client — INFO — get_user:19 — 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "users": [
+            {
+                "id": 197880,
+                "userName": "8BL-0006",
+                "firstName": "Brain",
+                "email": "brain.lara@yopmail.com",
+                "lastName": "Lara",
+                "timeZoneId": 1,
+                "lastModifiedOn": 1718786923,
+                "statusId": 2,
+                "userRefId": "8BL-0006",
+                "unit": {},
+                "userRank": {
+                    "rank": {
+                        "id": 6,
+                        "name": "Inactive Instructor",
+                        "code": "INACTIVE_INSTRUCTOR"
+                    },
+                    "isActive": true
+                },
+                "lastLoggedDate": 1718786923,
+                "status": "ACTIVE",
+                "region": "US",
+                "isRetail": true,
+                "isDistributor": true
+            }
+        ],
+        "pagination": {
+            "pageNumber": 1,
+            "pageSize": 25,
+            "totalCount": 1,
+            "totalPages": 1,
+            "isFirst": true,
+            "isLast": true,
+            "totalCountOnPage": 1
+        }
+    }
+}"
+"2024-06-20 12:00:12,558 — users_tests — INFO — test_get_user_by_gid:37 — User ID: 197880"

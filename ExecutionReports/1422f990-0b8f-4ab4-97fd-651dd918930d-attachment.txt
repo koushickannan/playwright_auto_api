@@ -1,3 +1,0 @@
-"2024-06-17 15:27:32,465 — products.reqres.clients.user_client — INFO — get_user:27 — 
-Get User Response:
-{}"

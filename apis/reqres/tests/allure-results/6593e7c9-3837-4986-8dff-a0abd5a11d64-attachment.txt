@@ -1,0 +1,9 @@
+INFO     products.reqres.clients.user_client:user_client.py:27 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "id": 1474126
+    }
+}
+INFO     users_tests:users_tests.py:39 User ID from create retail user API: 1474126

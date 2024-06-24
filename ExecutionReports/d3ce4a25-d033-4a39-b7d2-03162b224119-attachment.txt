@@ -1,0 +1,51 @@
+[32mINFO    [0m apis.reqres.clients.user_client:user_client.py:34 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "user": {
+            "userId": 1474134,
+            "firstName": "Pamela",
+            "lastName": "Williams",
+            "emailId": "Pamela.Williams@rqimail.laerdalblr.in",
+            "createdAt": 1719207872,
+            "updatedAt": 1719207872,
+            "agreementAcceptanceDate": 1719207872,
+            "lastModifiedDate": "2024-06-24T05:44:32",
+            "userRank": {
+                "isActive": true,
+                "rank": {
+                    "id": 1,
+                    "name": "Learner",
+                    "code": "LEARNER"
+                },
+                "roleId": 11,
+                "roleName": "Learner",
+                "roleTitle": "Learner",
+                "externalRoleId": 2,
+                "isManual": false
+            },
+            "globalRank": {},
+            "linkedProfiles": [
+                {
+                    "userId": 1474134,
+                    "rankId": 1,
+                    "rankName": "Learner",
+                    "isRetail": true,
+                    "isLearner": true
+                }
+            ],
+            "isTermsAccepted": true,
+            "status": "ActivationPending",
+            "region": "US",
+            "isRetail": true,
+            "isSelfRegister": false,
+            "ceJob": {},
+            "isDistributor": false,
+            "recoveryStatus": "Do_Not_Show_Me",
+            "extLmsUserIds": [],
+            "isHealthStreamUser": false,
+            "profileActivated": false
+        }
+    }
+}

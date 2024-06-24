@@ -1,0 +1,18 @@
+INFO     products.reqres.clients.user_client:user_client.py:27 
+Get User Response:
+{
+    "status": 500,
+    "error": {
+        "httpMethod": "POST",
+        "urlPath": "http://qa-nrp-api.laerdalblr.in/v1/users",
+        "timeStamp": "2024-06-21T09:56:43.903573Z",
+        "errors": [
+            {
+                "errorCode": "user-organization-service_1001",
+                "message": "Internal error in API Service.",
+                "classification": "common.server"
+            }
+        ],
+        "httpStatusText": "INTERNAL_SERVER_ERROR"
+    }
+}

@@ -1,0 +1,14 @@
+"2024-06-21 14:43:29,984 — products.reqres.clients.token_client — INFO — create_token:21 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMTdjZDI3NGUtMDVkZi00OTFlLTk3MTYtOWIzM2E0ZDdlZjBlIiwiZXhwIjo5NDk0OTYxMjA5LCJpYXQiOjE3MTg5NjEyMDksImlzcyI6IjEiLCJzdWIiOiIxIn0.Gl1LIyBidtkJhfwNakCXzedu9l0Lh7U9UxMHuYjh6sE",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMTdjZDI3NGUtMDVkZi00OTFlLTk3MTYtOWIzM2E0ZDdlZjBlIiwiZXhwIjoxNzI2NzM3MjA5LCJpYXQiOjE3MTg5NjEyMDksImlzcyI6IjEiLCJzdWIiOiIxIn0.bGuGy-VO6vIlxefLUMBwEWsMiaj09_N-DIVYecgtKUw"
+    }
+}"
+Guest Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiMTdjZDI3NGUtMDVkZi00OTFlLTk3MTYtOWIzM2E0ZDdlZjBlIiwiZXhwIjo5NDk0OTYxMjA5LCJpYXQiOjE3MTg5NjEyMDksImlzcyI6IjEiLCJzdWIiOiIxIn0.Gl1LIyBidtkJhfwNakCXzedu9l0Lh7U9UxMHuYjh6sE
+First name :  Sue
+Last name :  Brown
+Email :  Sue.Brown@rqimail.laerdalblr.in
