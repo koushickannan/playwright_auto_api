@@ -1,12 +1,9 @@
 import pytest
-import self
 from allure import description, epic, story, step
-import requests
 
 from core.utils.config_parser import get_config
 from core.utils.logger_config import get_logger
 from apis.reqres.clients.user_client import UserClient
-from apis.reqres.endpoints.get_endpoint import GetEndpoint
 from apis.reqres.testdata.user_test_data import create_user_request_payload
 
 
@@ -18,7 +15,7 @@ class TestUserModules:
     user_id = None
 
     @pytest.fixture(scope="class")
-    def user_client(self, request_context):
+    def user_client(self, request_context, env):
         def create_user_client(base_url: str) -> UserClient:
             context_generator = request_context(base_url)
             context = next(context_generator)
@@ -31,8 +28,8 @@ class TestUserModules:
     @step("Create retail user")
     @pytest.mark.reqres
     @pytest.mark.dependency()
-    def test_create_retail_user(self, user_client, guest_token):
-        base_url = get_config("BaseConfig", "base_url")
+    def test_create_retail_user(self, user_client, guest_token, env):
+        base_url = get_config(env, None, "base_url")
         client = user_client(base_url)
         request_payload = create_user_request_payload()
         endpoint_key = "get_user_endpoint"  # This should match your endpoint configuration key
@@ -52,10 +49,10 @@ class TestUserModules:
     @step("Get Users by global ID")
     @pytest.mark.reqres
     @pytest.mark.dependency()
-    def test_get_user_by_gid(self, user_client, tenant_admin_token):
-        base_url = get_config("BaseConfig", "base_url")
+    def test_get_user_by_gid(self, user_client, tenant_admin_token, env):
+        base_url = get_config(env, None, "base_url")
         client = user_client(base_url)
-        nrp_id = get_config("TestData", "nrp_id")
+        nrp_id = get_config(env, None, "nrp_id")
         query_params = {"nrpId": nrp_id}
         endpoint_key = "get_user_endpoint"  # This should match your endpoint configuration key
         status_code, response = client.get_user(
@@ -70,8 +67,8 @@ class TestUserModules:
     @step("Get Users by User ID")
     @pytest.mark.reqres
     @pytest.mark.dependency()
-    def test_get_user_by_id(self, user_client, tenant_admin_token):
-        base_url = get_config("BaseConfig", "base_url")
+    def test_get_user_by_id(self, user_client, tenant_admin_token, env):
+        base_url = get_config(env, None, "base_url")
         client = user_client(base_url)
         user_id = self.__class__.user_id
         endpoint_key = "get_user_id_endpoint"  # This should match your endpoint configuration key

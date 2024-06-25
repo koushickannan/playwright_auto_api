@@ -1,0 +1,50 @@
+"2024-06-24 18:59:58,405 — apis.reqres.clients.user_client — INFO — get_user:34 — 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "user": {
+            "userId": 1474157,
+            "firstName": "Carrie",
+            "lastName": "Clark",
+            "emailId": "Carrie.Clark@rqimail.laerdalblr.in",
+            "createdAt": 1719235796,
+            "updatedAt": 1719235796,
+            "agreementAcceptanceDate": 1719235796,
+            "lastModifiedDate": "2024-06-24T13:29:56",
+            "userRank": {
+                "isActive": true,
+                "rank": {
+                    "id": 1,
+                    "name": "Learner",
+                    "code": "LEARNER"
+                },
+                "roleId": 11,
+                "roleName": "Learner",
+                "roleTitle": "Learner",
+                "externalRoleId": 2,
+                "isManual": false
+            },
+            "globalRank": {},
+            "linkedProfiles": [
+                {
+                    "userId": 1474157,
+                    "rankId": 1,
+                    "rankName": "Learner",
+                    "isRetail": true,
+                    "isLearner": true
+                }
+            ],
+            "isTermsAccepted": true,
+            "status": "ActivationPending",
+            "isRetail": true,
+            "isSelfRegister": false,
+            "ceJob": {},
+            "isDistributor": false,
+            "recoveryStatus": "Do_Not_Show_Me",
+            "extLmsUserIds": [],
+            "isHealthStreamUser": false,
+            "profileActivated": false
+        }
+    }
+}"

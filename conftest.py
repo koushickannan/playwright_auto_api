@@ -5,6 +5,15 @@ from core.utils.config_parser import get_config
 from apis.reqres.clients.token_client import TokenClient
 
 
+def pytest_addoption(parser):
+    parser.addoption("--env", action="store", default="QA", help="Environment to run tests against")
+
+
+@pytest.fixture(scope="session")
+def env(request):
+    return request.config.getoption("--env")
+
+
 @pytest.fixture(scope="session")
 def token_storage():
     return {}
@@ -40,7 +49,7 @@ def token_storage():
 
 
 @pytest.fixture(scope="session")
-def request_context(playwright: Playwright) -> Callable[[str], Generator[APIRequestContext, None, None]]:
+def request_context(playwright: Playwright, env) -> Callable[[str], Generator[APIRequestContext, None, None]]:
     """
         Fixture to create request context with a given base URL.
         """
@@ -79,7 +88,7 @@ def request_context(playwright: Playwright) -> Callable[[str], Generator[APIRequ
 #     return create_client
 @pytest.fixture(scope="session")
 #def token_client(request_context: APIRequestContext) -> Callable[[str], TokenClient]:
-def token_client(request_context) -> Callable[[str], TokenClient]:
+def token_client(request_context, env) -> Callable[[str], TokenClient]:
     def create_client(base_url: str) -> TokenClient:
         # context = request_context  # Use the already provided request context
         # client = TokenClient(request_context=context)
@@ -93,9 +102,9 @@ def token_client(request_context) -> Callable[[str], TokenClient]:
 
 
 @pytest.fixture(scope="session")
-def tenant_admin_token(token_client, token_storage):
-    client = token_client(get_config("BaseConfig", "base_url"))
-    status_code, response = client.create_tenant_admin_token()
+def tenant_admin_token(token_client, token_storage, env):
+    client = token_client(get_config(env, None, "base_url"))
+    status_code, response = client.create_tenant_admin_token(env)
     #status_code, response = token_client.create_tenant_admin_token(base_url=get_config("BaseConfig", "base_url"))
     assert status_code == 200  # or whatever the expected status code is
     token_storage['tenant_admin_token'] = response['data']['token']
@@ -104,19 +113,19 @@ def tenant_admin_token(token_client, token_storage):
 
 
 @pytest.fixture(scope="session")
-def guest_token(token_client, token_storage):
+def guest_token(token_client, token_storage, env):
     #status_code, response = token_client.create_guest_token(base_url=get_config("BaseConfig", "bff_url"))
-    client = token_client(get_config("BaseConfig", "bff_url"))
-    status_code, response = client.create_guest_token()
+    client = token_client(get_config(env, None, "bff_url"))
+    status_code, response = client.create_guest_token(env)
     assert status_code == 200  # or whatever the expected status code is
     token_storage['guest_token'] = response['data']['token']
     print("Guest Token : ", response['data']['token'])
     return response['data']['token']
 
 
-@pytest.fixture(scope="session")
-def base_url():
-    return get_config("BaseConfig", "base_url")
+# @pytest.fixture(scope="session")
+# def base_url(env):
+#     return get_config(env, None, "base_url")
 
 
 @pytest.fixture(scope="session")

@@ -4,9 +4,11 @@ This module is used for basic CRUD operations using Playwright -> APIRequestCont
 from playwright.sync_api import APIRequestContext
 from core.base.base_endpoint import IEndpointTemplate
 from core.constants.http_methods import HttpMethods
+from core.utils.logger_config import get_logger
 
 
 class BaseClient:
+    logger = get_logger(module_name=__name__)
 
     def __init__(self, request_context: APIRequestContext):
         self.request_context = request_context
@@ -28,17 +30,10 @@ class BaseClient:
         headers = endpoint.headers(auth_token=auth_token)
         request_body = endpoint.request_body()
 
-        # if path_params:
-        #     url = url.format(**path_params)
-
         if path_params:
             for key, value in path_params.items():
-                #url = url.format(**path_params)
+                # url = url.format(**path_params)
                 url = url.replace(f'{{{key}}}', str(value))
-
-        # if query_params:
-        #     url += '?'
-        #     url += '&'.join([f'{key}={value}' for key, value in query_params.items()])
 
         if query_params:
             # Construct the query string with the specified format
@@ -47,11 +42,11 @@ class BaseClient:
 
         response = None
 
-        # match http_method:
-        #     case HttpMethods.GET.name:
-        #         response = self.request_context.get(url=url, headers=headers)
-        #     case HttpMethods.POST.name:
-        #         response = self.request_context.post(url=url, headers=headers, data=request_body)
+        # Log the request details
+        self.logger.info(f"Request: {http_method} {url}")
+        self.logger.info(f"Headers: {headers}")
+        if request_body:
+            self.logger.info(f"Request Body: {request_body}")
 
         if http_method == HttpMethods.GET.name:
             response = self.request_context.get(url=url, headers=headers)

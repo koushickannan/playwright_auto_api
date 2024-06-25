@@ -1,4 +1,6 @@
 import json, pytest
+from typing import Tuple
+
 from core.utils.logger_config import get_logger
 from core.base.base_client import BaseClient
 from playwright.sync_api import APIRequestContext
@@ -21,11 +23,13 @@ class TokenClient(BaseClient):
         self.logger.info("\nCreate Token Response:\n{}".format(json.dumps(response, indent=4)))
         return status_code, response
 
-    def create_tenant_admin_token(self) -> (int, dict):
-        return self.create_token(create_tenant_admin_token, "token_endpoint")
+    def create_tenant_admin_token(self, env: str) -> Tuple[int, dict]:
+        token_request = create_tenant_admin_token(env)
+        return self.create_token(token_request, "token_endpoint")
 
-    def create_guest_token(self) -> (int, dict):
-        return self.create_token(create_guest_token, "guest_endpoint")
+    def create_guest_token(self, env: str) -> Tuple[int, dict]:
+        token_request = create_guest_token(env)
+        return self.create_token(token_request, "guest_endpoint")
 
 
 """

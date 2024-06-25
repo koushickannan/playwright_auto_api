@@ -1,9 +1,0 @@
-"2024-06-24 11:14:32,157 — apis.reqres.clients.user_client — INFO — create_user:42 — 
-Get User Response:
-{
-    "status": 200,
-    "data": {
-        "id": 1474134
-    }
-}"
-"2024-06-24 11:14:32,158 — users_tests — INFO — test_create_retail_user:39 — User ID from create retail user API: 1474134"

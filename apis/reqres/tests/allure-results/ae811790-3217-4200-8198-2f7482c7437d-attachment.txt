@@ -1,0 +1,20 @@
+"2024-06-24 18:59:55,667 — apis.reqres.clients.token_client — INFO — create_token:23 — 
+Create Token Response:
+{
+    "status": 200,
+    "error": null,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiODcwNjlkNjAtYzRjZC00NjMxLWE5YTAtYmMwMjE0MDFjNzhhIiwiZXhwIjo5NDk1MjM1Nzk1LCJpYXQiOjE3MTkyMzU3OTUsImlzcyI6IjEiLCJzdWIiOiIxIn0.lpa7E9dq3EzwOIFFBsJiH6h3E6GtJmK90qIO8QUC9G4",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiODcwNjlkNjAtYzRjZC00NjMxLWE5YTAtYmMwMjE0MDFjNzhhIiwiZXhwIjoxNzI3MDExNzk1LCJpYXQiOjE3MTkyMzU3OTUsImlzcyI6IjEiLCJzdWIiOiIxIn0.ENziIqm5MGvHt-3sD7q9uh-cXhQt9GNHPJ7aP67UYkM"
+    }
+}"
+Guest Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjEiLCJ1c2VySWQiOiIxIiwic3RvcmVDb2RlIjoiNzEwIiwibGFuZ0NvZGUiOiJlbiIsInJvbGUiOiJndWVzdCIsInJvbGVJZCI6Mjg1LCJ1dWlkIjoiODcwNjlkNjAtYzRjZC00NjMxLWE5YTAtYmMwMjE0MDFjNzhhIiwiZXhwIjo5NDk1MjM1Nzk1LCJpYXQiOjE3MTkyMzU3OTUsImlzcyI6IjEiLCJzdWIiOiIxIn0.lpa7E9dq3EzwOIFFBsJiH6h3E6GtJmK90qIO8QUC9G4
+"2024-06-24 18:59:56,456 — apis.reqres.clients.user_client — INFO — create_user:53 — 
+Get User Response:
+{
+    "status": 200,
+    "data": {
+        "id": 1474157
+    }
+}"
+"2024-06-24 18:59:56,456 — users_tests — INFO — test_create_retail_user:47 — User ID from create retail user API: 1474157"
