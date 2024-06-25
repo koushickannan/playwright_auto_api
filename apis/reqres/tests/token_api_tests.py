@@ -11,11 +11,6 @@ from http import HTTPStatus
 @description("Scenarios: Create token")
 class TestTokenModules:
     logger = get_logger(module_name=__name__)
-    #
-    # @pytest.fixture
-    # def token_client(self, request_context):
-    #     user_client_context = TokenClient(request_context=request_context)
-    #     yield user_client_context
 
     @step("Create a tenant admin token")
     @pytest.mark.reqres
@@ -28,5 +23,3 @@ class TestTokenModules:
     @pytest.mark.dependency()
     def test_guest_token(self, guest_token):
         assert guest_token is not None
-        
-

@@ -1,1 +1,0 @@
-"2024-06-17 15:52:54,790 — pytest_dependency — INFO — checkDepend:100 — skip test_get_user_not_found because it depends on TestUserModules::test_create_user"

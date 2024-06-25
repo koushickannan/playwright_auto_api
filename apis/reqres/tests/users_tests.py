@@ -21,8 +21,6 @@ class TestUserModules:
             context = next(context_generator)
             return UserClient(request_context=context)
 
-        # user_client_context = UserClient(request_context=request_context)
-        # yield user_client_context
         return create_user_client
 
     @step("Create retail user")

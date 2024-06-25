@@ -36,6 +36,3 @@ class PostEndpoint(IEndpointTemplate):
             return self.payload_provider().dict() if hasattr(self.payload_provider(),
                                                              'dict') else self.payload_provider()
         return self.payload_provider
-
-    # def request_body1(self) -> dict | None:
-    #     return create_guest_token().dict()
