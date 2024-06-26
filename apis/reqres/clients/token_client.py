@@ -5,7 +5,8 @@ from core.utils.logger_config import get_logger
 from core.base.base_client import BaseClient
 from playwright.sync_api import APIRequestContext
 from apis.reqres.endpoints.post_endpoint import PostEndpoint
-from apis.reqres.testdata.token_test_data import create_tenant_admin_token, create_guest_token
+from apis.reqres.testdata.token_test_data import create_tenant_admin_token, create_guest_token, \
+    create_guest_token_by_gid
 
 
 class TokenClient(BaseClient):
@@ -25,6 +26,10 @@ class TokenClient(BaseClient):
         token_request = create_tenant_admin_token(env)
         return self.create_token(token_request, "token_endpoint")
 
+    def create_guest_token_by_gid(self, env: str) -> Tuple[int, dict]:
+        token_request = create_guest_token_by_gid(env)
+        return self.create_token(token_request, "guest_endpoint")
+
     def create_guest_token(self, env: str) -> Tuple[int, dict]:
         token_request = create_guest_token(env)
-        return self.create_token(token_request, "guest_endpoint")
+        return self.create_token(token_request, "token_endpoint")

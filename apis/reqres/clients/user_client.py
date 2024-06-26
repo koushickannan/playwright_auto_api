@@ -49,5 +49,5 @@ class UserClient(BaseClient):
             endpoint,
             auth_token=auth_token
         )
-        self.logger.info("\nGet User Response:\n{}".format(json.dumps(response, indent=4)))
+        self.logger.info("\nCreate User Response:\n{}".format(json.dumps(response, indent=4)))
         return status_code, response

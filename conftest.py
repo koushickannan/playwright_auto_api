@@ -73,11 +73,21 @@ def tenant_admin_token(token_client, token_storage, env):
 
 @pytest.fixture(scope="session")
 def guest_token(token_client, token_storage, env):
-    client = token_client(get_config(env, None, "bff_url"))
+    client = token_client(get_config(env, None, "base_url"))
     status_code, response = client.create_guest_token(env)
     assert status_code == 200  # or whatever the expected status code is
     token_storage['guest_token'] = response['data']['token']
     print("Guest Token : ", response['data']['token'])
+    return response['data']['token']
+
+
+@pytest.fixture(scope="session")
+def guest_token_bff(token_client, token_storage, env):
+    client = token_client(get_config(env, None, "bff_url"))
+    status_code, response = client.create_guest_token_by_gid(env)
+    assert status_code == 200  # or whatever the expected status code is
+    token_storage['guest_token_by_gid'] = response['data']['token']
+    print("Guest Token by GID: ", response['data']['token'])
     return response['data']['token']
 
 

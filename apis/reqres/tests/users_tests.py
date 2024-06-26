@@ -1,6 +1,9 @@
 import pytest
 from allure import description, epic, story, step
+from assertpy import assert_that
 
+from core.constants.http_status import HTTPStatus
+from core.utils.assert_utils import Assertions
 from core.utils.config_parser import get_config
 from core.utils.logger_config import get_logger
 from apis.reqres.clients.user_client import UserClient
@@ -38,7 +41,7 @@ class TestUserModules:
         )
 
         # Assertions to verify the response
-        assert status_code == 200
+        Assertions.assert_status_code(status_code, HTTPStatus.OK)
 
         # Fetch user ID from the response
         self.__class__.user_id = response['data']['id']
@@ -60,7 +63,7 @@ class TestUserModules:
         )
 
         # Assertions to verify the response
-        assert status_code == 200
+        Assertions.assert_status_code(status_code, HTTPStatus.OK)
 
     @step("Get Users by User ID")
     @pytest.mark.reqres
@@ -77,4 +80,4 @@ class TestUserModules:
         )
 
         # Assertions to verify the response
-        assert status_code == 200
+        Assertions.assert_status_code(status_code, HTTPStatus.OK)

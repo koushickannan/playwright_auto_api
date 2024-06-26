@@ -23,3 +23,9 @@ class TestTokenModules:
     @pytest.mark.dependency()
     def test_guest_token(self, guest_token):
         assert guest_token is not None
+
+    @step("Create a guest token by GID using BFF")
+    @pytest.mark.reqres
+    @pytest.mark.dependency()
+    def test_guest_token_by_gid(self, guest_token_bff):
+        assert guest_token_bff is not None
