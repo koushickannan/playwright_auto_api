@@ -1,6 +1,6 @@
 import pytest
 from allure import description, epic, story, step
-from core.utils.logger_config import get_logger
+from common.utils.logger_config import get_logger
 from apis.reqres.clients.token_client import TokenClient
 from assertpy.assertpy import assert_that
 from http import HTTPStatus

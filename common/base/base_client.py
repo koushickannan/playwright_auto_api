@@ -2,9 +2,9 @@
 This module is used for basic CRUD operations using Playwright -> APIRequestContext
 """
 from playwright.sync_api import APIRequestContext
-from core.base.base_endpoint import IEndpointTemplate
-from core.constants.http_methods import HttpMethods
-from core.utils.logger_config import get_logger
+from common.base.base_endpoint import IEndpointTemplate
+from common.constants.http_methods import HttpMethods
+from common.utils.logger_config import get_logger
 
 
 class BaseClient:

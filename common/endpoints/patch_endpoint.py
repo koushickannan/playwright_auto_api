@@ -1,11 +1,11 @@
 from __future__ import annotations
 from typing import Callable, Union, Optional, Dict
-from core.base.base_endpoint import IEndpointTemplate
-from core.utils.config_parser import get_endpoint
-from core.constants.http_methods import HttpMethods
+from common.base.base_endpoint import IEndpointTemplate
+from common.utils.config_parser import get_endpoint
+from common.constants.http_methods import HttpMethods
 
 
-class DeleteEndpoint(IEndpointTemplate):
+class PatchEndpoint(IEndpointTemplate):
     def __init__(self, endpoint: str, payload_provider: Union[Callable[[], dict], dict] = None):
         self.payload_provider = payload_provider
         self.endpoint = endpoint
@@ -14,7 +14,7 @@ class DeleteEndpoint(IEndpointTemplate):
         return get_endpoint(self.endpoint)
 
     def http_method(self) -> str:
-        return HttpMethods.DELETE.name
+        return HttpMethods.PATCH.name
 
     def query_parameters(self) -> dict | None:
         return None

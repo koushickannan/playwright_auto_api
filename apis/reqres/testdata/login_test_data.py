@@ -1,5 +1,5 @@
 from apis.reqres.models.requests.login_request import LoginRequest
-from core.utils.config_parser import get_config
+from common.utils.config_parser import get_config
 
 
 def login(env: str, user_name: str = None, password: str = None) -> dict:

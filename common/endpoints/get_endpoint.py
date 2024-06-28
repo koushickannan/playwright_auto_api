@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Union, Callable, Optional, Dict
 
-from core.base.base_endpoint import IEndpointTemplate
-from core.utils.config_parser import get_endpoint
-from core.constants.http_methods import HttpMethods
+from common.base.base_endpoint import IEndpointTemplate
+from common.utils.config_parser import get_endpoint
+from common.constants.http_methods import HttpMethods
 
 
 class GetEndpoint(IEndpointTemplate):

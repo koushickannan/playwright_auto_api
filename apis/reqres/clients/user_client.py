@@ -1,11 +1,11 @@
 import json
 
-from core.utils.logger_config import get_logger
-from core.base.base_client import BaseClient
-from apis.reqres.endpoints.get_endpoint import GetEndpoint
+from common.utils.logger_config import get_logger
+from common.base.base_client import BaseClient
+from common.endpoints.get_endpoint import GetEndpoint
 from playwright.sync_api import APIRequestContext
 
-from apis.reqres.endpoints.post_endpoint import PostEndpoint
+from common.endpoints.post_endpoint import PostEndpoint
 
 
 class UserClient(BaseClient):

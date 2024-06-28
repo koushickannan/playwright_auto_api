@@ -1,10 +1,10 @@
-import json, pytest
+import json
 from typing import Tuple
 
-from core.utils.logger_config import get_logger
-from core.base.base_client import BaseClient
+from common.utils.logger_config import get_logger
+from common.base.base_client import BaseClient
 from playwright.sync_api import APIRequestContext
-from apis.reqres.endpoints.post_endpoint import PostEndpoint
+from common.endpoints.post_endpoint import PostEndpoint
 from apis.reqres.testdata.token_test_data import create_tenant_admin_token, create_guest_token, \
     create_guest_token_by_gid
 

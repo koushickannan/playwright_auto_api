@@ -1,7 +1,7 @@
 import self
 from assertpy import assert_that
 
-from core.utils.logger_config import get_logger
+from common.utils.logger_config import get_logger
 
 logger = get_logger(module_name=__name__)
 

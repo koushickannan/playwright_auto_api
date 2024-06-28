@@ -2,9 +2,9 @@ import json
 
 from playwright.async_api import APIRequestContext
 
-from apis.reqres.endpoints.post_endpoint import PostEndpoint
-from core.base.base_client import BaseClient
-from core.utils.logger_config import get_logger
+from common.endpoints.post_endpoint import PostEndpoint
+from common.base.base_client import BaseClient
+from common.utils.logger_config import get_logger
 
 
 class LoginClient(BaseClient):

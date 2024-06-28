@@ -3,7 +3,7 @@ from typing import Dict, Any
 from apis.reqres.models.requests.token_request import TokenRequest, Scope, GuestTokenRequest
 from faker import Faker
 
-from core.utils.config_parser import get_config
+from common.utils.config_parser import get_config
 
 data_generator = Faker()
 

@@ -2,7 +2,7 @@ import pytest
 from typing import Generator, Callable
 
 from playwright.sync_api import Playwright, APIRequestContext
-from core.utils.config_parser import get_config
+from common.utils.config_parser import get_config
 from apis.reqres.clients.token_client import TokenClient
 
 

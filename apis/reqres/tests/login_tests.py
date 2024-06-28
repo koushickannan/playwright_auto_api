@@ -2,10 +2,10 @@ from assertpy import assert_that
 
 from apis.reqres.clients.login_client import LoginClient
 from apis.reqres.testdata.login_test_data import login
-from core.constants.http_status import HTTPStatus
-from core.utils.assert_utils import Assertions
-from core.utils.config_parser import get_config
-from core.utils.logger_config import get_logger
+from common.constants.http_status import HTTPStatus
+from common.utils.assert_utils import Assertions
+from common.utils.config_parser import get_config
+from common.utils.logger_config import get_logger
 import pytest
 from allure import description, epic, story, step
 
